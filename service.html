@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #services{
+    padding: 60px;
+    
+    margin-top: 150px;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-title{
+    text-align: center;
+    padding-top: 0;
+    
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.services-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: width 0.5s,transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin: bottom 30px; 
+    color:#ff004f ;
+
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+    </style>
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Our web design services create visually stunning and user-friendly websites that effectively communicate your brand’s message and engage your audience.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>UI/UX</h2>
+            <p>Our UI/UX design services create engaging and intuitive user interfaces that enhance the overall user experience.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Our app design services focus on developing sleek, high-performance mobile applications tailored to meet your specific needs.</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
+    
